@@ -20,12 +20,10 @@ public class WordPuzzle {
       else if(word.charAt(i) == 'u' || word.charAt(i) == 'U'){
         wordPuzzle += "-";
       }
-      //TODO: check to make sure last character in string gets processed
       else {
         wordPuzzle += word.substring(i, i+1);
       }
     }
-
     return wordPuzzle;
   }
 }
