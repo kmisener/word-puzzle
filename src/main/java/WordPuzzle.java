@@ -2,6 +2,13 @@ public class WordPuzzle {
 
   public String createWordPuzzle(String word) {
 
+    public static final int MAX_GUESSES = 3;
+    private int numberOfGuessesRemaining = MAX_GUESSES;
+
+    public int getNumberOfGuessesRemaining() {
+      return numberOfGuessesRemaining;
+    }
+
     String wordPuzzle = "";
 
     for(int i = 0; i < word.length(); i++) {
@@ -53,4 +60,8 @@ public class WordPuzzle {
       }// End While
   return isGuessSuccessful;
   }// End guessWordPuzzle
-}
+
+  public Boolean guessesRemaining() {
+
+  }
+}// End WordPuzzle
