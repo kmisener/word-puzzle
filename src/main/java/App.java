@@ -23,10 +23,10 @@ public class App {
       WordPuzzleCreator wordPuzzleCreator = new WordPuzzleCreator();
 
       String word = request.queryParams("word");
-      String wordPuzzle = wordPuzzleCreator.createWordPuzzle(word);
+      String wordPuzzle =  wordPuzzleCreator.createWordPuzzle(word);
 
       model.put("template", "templates/output.vtl");
-      model.put("word", word);
+      model.put("word", wordPuzzle);
 
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
