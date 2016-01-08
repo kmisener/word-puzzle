@@ -7,7 +7,7 @@
 ## Description
 
 _The user enters a word or phrase, which gets converted to a puzzle. The puzzle is then ouput to html for someone to guess
- what the word or phrase is from the puzzle_
+ what the word or phrase is from the puzzle._
 
 ## Setup/Installation Requirements
 
