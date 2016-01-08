@@ -6,7 +6,8 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_The user enters a word or phrase, which gets converted to a puzzle. The puzzle is then ouput to html for someone to guess
+ what the word or phrase is from the puzzle_
 
 ## Setup/Installation Requirements
 
