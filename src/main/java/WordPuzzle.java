@@ -1,13 +1,12 @@
 public class WordPuzzle {
 
+      private int numberOfGuessesRemaining = 3;
+
+      public int getNumberOfGuessesRemaining() {
+        return numberOfGuessesRemaining;
+      }
+
   public String createWordPuzzle(String word) {
-
-    public static final int MAX_GUESSES = 3;
-    private int numberOfGuessesRemaining = MAX_GUESSES;
-
-    public int getNumberOfGuessesRemaining() {
-      return numberOfGuessesRemaining;
-    }
 
     String wordPuzzle = "";
 
@@ -34,7 +33,9 @@ public class WordPuzzle {
     return wordPuzzle;
   } // End createWordPuzzle
 
-  public Boolean guessWordPuzzle(String guess, String word) {;
+  public Boolean guessWordPuzzle(String guess, String word) {
+
+    numberOfGuessesRemaining--;
 
     Boolean isGuessSuccessful = false;
     Boolean isCheckingGuess = true;
@@ -60,8 +61,4 @@ public class WordPuzzle {
       }// End While
   return isGuessSuccessful;
   }// End guessWordPuzzle
-
-  public Boolean guessesRemaining() {
-
-  }
 }// End WordPuzzle
