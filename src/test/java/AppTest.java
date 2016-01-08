@@ -44,7 +44,7 @@ public class AppTest extends FluentTest {
       goTo("http://localhost:4567/");
       fill("#word").with("This is a test");
       submit(".btn");
-      assertThat(pageSource()).contains("See if you can guess what this phrase is");
+      assertThat(pageSource()).contains("Try to guess what this puzzle is");
   }
 
   @Test

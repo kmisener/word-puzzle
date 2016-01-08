@@ -25,5 +25,31 @@ public class WordPuzzle {
       }
     }
     return wordPuzzle;
-  }
+  } // End createWordPuzzle
+
+  public Boolean guessWordPuzzle(String guess, String word) {
+
+    Boolean isGuessSuccessful = false;
+    Boolean isCheckingGuess = true;
+
+    while(isCheckingGuess) {
+      for(int i = 0; i < word.length(); i++) {
+
+        if(word.length() != guess.length())  {
+          isCheckingGuess = false;
+        }
+        else if(word.length() == i+1 && isCheckingGuess == true){
+          isGuessSuccessful = true;
+          isCheckingGuess = false;
+        }
+        else if(word.charAt(i) == guess.charAt(i)) {
+          isCheckingGuess = true;
+        }
+        else {
+          isCheckingGuess = false;
+        }
+      }// End For
+    }// End While
+  return isGuessSuccessful;
+  }// End guessWordPuzzle
 }
