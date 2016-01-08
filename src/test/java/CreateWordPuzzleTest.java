@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 public class CreateWordPuzzleTest {
 
-  WordPuzzleCreator wordPuzzle;
+  WordPuzzle wordPuzzle;
 
   @Before
   public void setUp() {
-    wordPuzzle = new WordPuzzleCreator();
+    wordPuzzle = new WordPuzzle();
   }
 
 

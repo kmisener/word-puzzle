@@ -20,7 +20,7 @@ public class App {
 
     get("/output", (request, response) -> {
       HashMap model = new HashMap();
-      WordPuzzleCreator wordPuzzleCreator = new WordPuzzleCreator();
+      WordPuzzle wordPuzzleCreator = new WordPuzzle();
 
       String word = request.queryParams("word");
       String wordPuzzle =  wordPuzzleCreator.createWordPuzzle(word);

@@ -1,4 +1,4 @@
-public class WordPuzzleCreator {
+public class WordPuzzle {
 
   public String createWordPuzzle(String word) {
 
