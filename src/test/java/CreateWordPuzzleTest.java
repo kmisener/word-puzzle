@@ -62,5 +62,10 @@ public class CreateWordPuzzleTest {
     assertEquals("-", wordPuzzle.createWordPuzzle("u"));
   }
 
+  @Test
+  public void createWordPuzzle_inputBelieve_you_can_and_youre_halfway_there_Theodore_RooseveltReturnDash_Dash(){
+    assertEquals("B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt", wordPuzzle.createWordPuzzle("Believe you can and you're halfway there. Theodore Roosevelt"));
+  }
+
 
 }
