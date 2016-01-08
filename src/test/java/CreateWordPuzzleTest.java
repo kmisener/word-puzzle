@@ -52,5 +52,15 @@ public class CreateWordPuzzleTest {
     assertEquals("-", wordPuzzle.createWordPuzzle("o"));
   }
 
+  @Test
+  public void createWordPuzzle_inputUReturnDash_Dash(){
+    assertEquals("-", wordPuzzle.createWordPuzzle("U"));
+  }
+
+  @Test
+  public void createWordPuzzle_inputuReturnDash_Dash(){
+    assertEquals("-", wordPuzzle.createWordPuzzle("u"));
+  }
+
 
 }

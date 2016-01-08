@@ -17,6 +17,9 @@ public class WordPuzzleCreator {
       else if(word.charAt(i) == 'o' || word.charAt(i) == 'O'){
         wordPuzzle += "-";
       }
+      else if(word.charAt(i) == 'u' || word.charAt(i) == 'U'){
+        wordPuzzle += "-";
+      }
       else {
         wordPuzzle += word.substring(i, i+1);
       }
