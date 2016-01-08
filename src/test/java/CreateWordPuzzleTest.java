@@ -41,4 +41,16 @@ public class CreateWordPuzzleTest {
   public void createWordPuzzle_inputIReturnDash_Dash(){
     assertEquals("-", wordPuzzle.createWordPuzzle("I"));
   }
+
+  @Test
+  public void createWordPuzzle_inputOReturnDash_Dash(){
+    assertEquals("-", wordPuzzle.createWordPuzzle("O"));
+  }
+
+  @Test
+  public void createWordPuzzle_inputoReturnDash_Dash(){
+    assertEquals("-", wordPuzzle.createWordPuzzle("o"));
+  }
+
+
 }
